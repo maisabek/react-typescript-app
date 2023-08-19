@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import { counterContext } from '../context/Store'
+import { counterContext } from './Store'
 
 export default function About() {
     let data :Object | any= useContext(counterContext)
 
   return (
     <>
-    about
-    {data.count}
+    <h3 className='my-3'>Context</h3>
+    <p> about {data.count}</p> 
     </>
   )
 }
