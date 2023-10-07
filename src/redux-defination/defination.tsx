@@ -1,4 +1,3 @@
-import { useSelector, useDispatch } from 'react-redux'
 /*
 redux 
 state mangement مكتبة معمولة عشان ال 
@@ -8,6 +7,7 @@ redux toolkit
 _____________________________________________
 
 npm install @reduxjs/toolkit
+
 npm install react-redux  ==>
 redux بال react بتربط ال  redux عشان لو هستخدم الريأكت مع ال 
 _________________________
@@ -24,7 +24,6 @@ asyncronus لل Call يعنى بتخلينى اعمل
 npm i redux-thunk
 
 */
-
 export default function Defination() {
   return <h5>Redux Defination</h5>
 }
