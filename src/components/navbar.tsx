@@ -13,17 +13,16 @@ const Navbar = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page"
-                                 to="Home">Home</Link>
+                                    to="Home">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="About">about</Link>
                             </li>
-                           
-                            <li className="nav-item">
-                                <Link className="nav-link" to="counter" 
-                                aria-disabled="true">counter</Link>
-                            </li>
 
+                            <li className="nav-item">
+                                <Link className="nav-link" to="counter"
+                                    aria-disabled="true">counter</Link>
+                            </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link" to="index">posts List</Link>
@@ -34,9 +33,9 @@ const Navbar = () => {
                                 <Link className="nav-link" to="add">add Post</Link>
                             </li>
 
-                           
+
                         </ul>
-                       
+
                     </div>
                 </div>
             </nav>

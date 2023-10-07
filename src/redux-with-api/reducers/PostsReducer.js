@@ -11,6 +11,7 @@ export default function (state = InitialState, action) {
                 ...state,
                 items: action.payload
             };
+       
         case Types.ADD_POST:
             return {
                 ...state,
@@ -23,6 +24,7 @@ export default function (state = InitialState, action) {
                 ...state,
                 items:state.items.filter((item, index) => item.id !== action.payload.id)
             };
+        
         default:
             return state;
     }
