@@ -1,18 +1,16 @@
-import Axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { DeletePost, fetchPosts } from '../actions/PostActions'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 function Index(props) {
   let [posts, setPosts] = useState([])
 
-
   useEffect(() => {
     // call action
     props.fetchPosts()
+
   }, [])
-
-
 
   return (
     <>
@@ -25,7 +23,7 @@ function Index(props) {
             <p>{data.body}</p>
             <button className='btn btn-danger'
               onClick={() => props.DeletePost(data.id)}>Delete</button>
-            <a className='btn btn-warning mx-3' to={`/edit/${data.id}`}>Edit</a>
+            <Link className='btn btn-warning mx-3' to={`/edit/${data.id}`}>Edit</Link>
           </div>
         )
       }

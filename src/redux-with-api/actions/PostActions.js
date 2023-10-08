@@ -30,3 +30,23 @@ export function DeletePost(id){
     dispatch({type:Types.DELETE_POST,payload:data})
   }
 }
+
+
+export function EditPost(post){
+  return async function(dispatch){
+    let {data} = await Axios.post(`https://jsonplaceholder.typicode.com/posts`, JSON.stringify(post), {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    dispatch({type:Types.EDIT_POST,payload:data})
+  }
+}
+
+
+  export function GetPostById(id){
+    return async function(dispatch){
+      let {data} = await Axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      dispatch({type:Types.PostById,payload:data})
+    }
+  }

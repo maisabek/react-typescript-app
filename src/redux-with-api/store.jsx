@@ -9,8 +9,10 @@ reducers بتاخد اول حاجة ال
 initial value وبعدان ال 
 middle ware وبعدان ال 
 */
+
 const middlewares=[thunk]
 const InitialState={}
+
 export default createStore(
     RootReducers,
     InitialState,

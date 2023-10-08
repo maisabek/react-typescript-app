@@ -11,16 +11,18 @@ export let counterContext = createContext(0)
 export default function CounterContextProvider(props){
     let [count,SetCount]=useState(0)
     let [price,SetPrice]=useState(100)
-    function increment(){
+
+    function increment() {
         SetCount(count + 1)
     }
 
-    function decrement(){
+    function decrement() {
         SetCount(count - 1)
     }
 
     // بتوعها children دة لل count معناها ابعت ال 
-    return <counterContext.Provider value={{count , price , increment , decrement}}>
+    return <counterContext.Provider 
+              value={{count , price , increment , decrement}}>
               {props.children}  
           </counterContext.Provider>
 }
