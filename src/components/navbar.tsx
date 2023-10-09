@@ -13,26 +13,26 @@ const Navbar = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page"
-                                    to="Home">Home</Link>
+                                    to="Home">context without api</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="About">about</Link>
+                                <Link className="nav-link" to="movie">context with api</Link>
                             </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link" to="counter"
-                                    aria-disabled="true">counter</Link>
+                                    aria-disabled="true">Redux without api</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="index">posts List</Link>
+                                <Link className="nav-link" to="index">Redux with api</Link>
                             </li>
 
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="add">add Post</Link>
+                                <Link className="nav-link" to="add">Redux with api(add)</Link>
                             </li>
-
+                           
 
                         </ul>
 
