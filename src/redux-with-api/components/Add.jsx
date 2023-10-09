@@ -2,6 +2,7 @@ import  Axios  from "axios"
 import { createFactory, useEffect, useState } from "react"
 import { connect } from "react-redux"
 import { AddPosts } from "../actions/PostActions"
+import store from "../store"
 
 function Add(props) {
    let [posts,setPosts]=useState({
@@ -22,6 +23,8 @@ function Add(props) {
       props.posts.unshift(props.post)
     }
   },[props.posts])
+  console.log("store = ",store.getState())
+
     return (
         <>
               <h3 className='my-3'>Redux With Api</h3>

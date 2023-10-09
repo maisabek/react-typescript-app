@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { EditPost, GetPostById } from "../actions/PostActions";
 import { useFormik } from "formik";
 import { useEffect } from "react";
+import store from "../store";
 const Edit = (props) => {
     const param=useParams()
 
@@ -20,6 +21,7 @@ const Edit = (props) => {
          props.EditPost(values)
         }
     })
+    console.log("store = ",store.getState())
     return (
         <>
            <form onSubmit={formik.handleSubmit}>

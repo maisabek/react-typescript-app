@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { DeletePost, fetchPosts } from '../actions/PostActions'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-
+import store from '../store'
 function Index(props) {
   let [posts, setPosts] = useState([])
 
@@ -11,6 +11,7 @@ function Index(props) {
     props.fetchPosts()
 
   }, [])
+  console.log("store = ",store.getState())
 
   return (
     <>
