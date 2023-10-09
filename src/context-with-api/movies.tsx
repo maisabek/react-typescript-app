@@ -14,7 +14,7 @@ const Movies = () => {
                     data.trendingMovie.map((data: any, index: any) =>
                         <div className="col-md-3" key={index}>
                             <div className="bg-primary p-3 my-2 text-white">
-                            <h5>{data.title}</h5>
+                              <h5>{data.title}</h5>
                             </div>
                         </div>
                     )
