@@ -47,13 +47,23 @@ ________________________
 بس في شويه اختلاف في طريقه اللي بتشتغل بيها بس،،
 زي مثلا
 redux ==>
-single store بيكون فيها  
-Open source js library, 
-مش بيحصل mutate لل store مع ال state
+
+-Redux is an open-source JavaScript library used to manage application State
+-Store’s state is immutable(state مع ال store لل mutate مش بيحصل)
+-Can only have a single-store
+-Uses the concept of reducer
+
+
 flux  ==>
-multiple stores ممكن يكون 
-Is an architecture
-بيحصلهم mutate
+- Flux is an architecture and not a framework or library
+- Store’s state is mutable
+- Can have multiple stores
+-Uses the concept of the dispatcher
+
+action ===> Dispatcher ==> store ==> view
+ <-                                    -
+ -                                     -
+ ======================================- 
 
 _______________
 
@@ -87,6 +97,20 @@ Commit: The current state is set as the starting point.
 
 _____________________________
 12. What is the difference between state and props?
+state ==> 
+- Holds information about the components
+- Is mutable
+- Can be changed
+- Child components cannot access 
+- Cannot have state
+
+Props ==> 
+- Allows to pass data from one component to other components as an argument
+- Are immutable
+- Are read-only
+- Child component can access 
+- Can have props
+
 _________________________
 Are there any things we should never do inside a reducer?
 
